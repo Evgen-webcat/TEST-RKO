@@ -1,5 +1,96 @@
 //out: null
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
 
+    .main_page_block_left {
+        display: none;
+    }
+
+    .main_page_block_right {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .main_page_block_text_caption {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .main_page_block_text_paragraph {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main_page_block_text_button {
+        margin: 35px auto 0;
+    }
+
+    .test_page_window {
+        width: 300px;
+        box-sizing: border-box;
+
+        .question {
+            .answers {
+                margin: 10px auto 0;
+
+                &.answers_1 {
+                    width: 100%;
+                }
+
+                &.answers_2 {
+
+                    .answers_label {
+                        height: 120px;
+                    }
+                }
+
+                &.answers_3,
+                &.answers_4 {
+                    width: 100%;
+
+                    .answers_label {
+                        width: 130px;
+                        height: 100px;
+                    }
+                }
+
+                &.answers_5 {
+
+                    .answers_label {
+                        width: 130px;
+                        height: 70px;
+                    }
+
+                    .answers_input+.answers_label .answers_label_img_1 {
+                        display: none;
+                    }
+
+                    .answers_input:checked+.answers_label .answers_label_img_2 {
+                        display: none;
+                    }
+                }
+
+                &_label {
+
+                    &_img {
+                        display: none;
+                    }
+                }
+            }
+
+            .form_input,
+            .form_button {
+                width: 100%;
+            }
+        }
+
+        .next_button {
+            margin: 10px auto 0;
+        }
+    }
 }
